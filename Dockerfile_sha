@@ -1,0 +1,6 @@
+FROM alpine@sha256:b3e87f642f5c48cdc7556c3e03a0d63916bd0055ba6edba7773df3cb1a76f224
+WORKDIR /app
+RUN echo "Docker build successful!" > test.txt
+
+CMD ["cat", "test.txt"]
+
